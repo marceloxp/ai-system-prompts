@@ -1,0 +1,26 @@
+/* CUSTOM */
+.elemento
+{
+	width: 300px;
+	height: 450px;
+	position: absolute;
+	opacity: 0;
+}
+
+#efx
+{
+	background: #000;
+	opacity: 1;
+}
+
+.zIndexCinco {
+	z-index: 5;
+}
+
+img
+{
+	image-rendering: -webkit-optimize-contrast;
+	position: absolute;
+}
+
+

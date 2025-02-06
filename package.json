@@ -12,6 +12,7 @@
   "devDependencies": {
     "gulp": "^5.0.0",
     "gulp-file-include": "^2.3.0",
-    "gulp-rename": "^2.0.0"
+    "gulp-rename": "^2.0.0",
+    "merge-stream": "^2.0.0"
   }
 }

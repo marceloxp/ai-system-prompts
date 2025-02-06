@@ -1,0 +1,95 @@
+html, body {
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+.container {
+	overflow: hidden;
+	display: block;
+	background-color: #000;
+	width: 336px;
+	height: 450px;
+	position: absolute;
+}
+
+.container.dev {
+	/* Esse CSS serve pra visualizar a peça centralizada, dividir a altura e a largura da peça e preencher a baixo */
+	transform: translate3d(-50%, -50%, 0);
+	left: 50%;
+	top: 50%;
+}
+
+/* Para colocar borda */
+.container .borda {
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	left: 0px;
+	top: 0px;
+}
+.container .borda,
+.container > a {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.container > a, .container > a > div {
+	position: absolute;
+	display: block;
+}
+
+/* Pausar animações */
+
+.paused
+{
+	animation-play-state: paused !important;
+}
+
+.paused img.UmsPluginSprite
+{
+	animation-play-state: paused !important;
+}
+
+.paused + .UmsPluginCallToAction
+{
+	animation-play-state: paused !important;
+}
+
+/* class utils */
+.flip_horizontal {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+.flip_vertical {
+	transform: rotateX(-180deg);
+	backface-visibility: hidden;
+}
+
+/* center classes */
+.hcenter
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.vcenter
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.acenter
+{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
